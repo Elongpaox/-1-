@@ -20,7 +20,7 @@ body {
 
 /* 关闭按钮 */
 
-.login .close {
+.sign .close {
     font-size: 0.8rem;
     position: absolute;
     right: .4rem;
@@ -28,51 +28,72 @@ body {
     color: #b2bac2;
 }
 
-.login_interface {
+.sign_interface {
     width: 12.5rem;
-    height: 8.33rem;
     background-color: white;
     border-radius: 10px;
-    box-shadow: .13rem .13rem .96rem rgba(59, 56, 56, 0.5);
     /* 水平垂直居中 */
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    /* 盒子阴影 */
+    box-shadow: .13rem .13rem .96rem rgba(59, 56, 56, 0.5);
 }
 
-.login h2 {
+.sign_interface .sign h2 {
     width: 12.5rem;
     font-size: .83rem;
     text-align: center;
     margin-top: .42rem;
 }
 
-.login #username {
+.sign input {
     font-size: .32rem;
     width: 10.5rem;
     height: .9rem;
     margin-left: .9rem;
+}
+
+.sign #username {
     padding-left: .4rem;
     border: .02rem solid rgba(127, 127, 127, 0.5);
 }
 
-.login #password {
-    font-size: .32rem;
-    width: 10.5rem;
-    height: .9rem;
-    margin-left: .9rem;
+.sign #password {
     padding-left: .4rem;
     border: .02rem solid rgba(127, 127, 127, 0.5);
 }
 
-/* 登入按钮 */
+.sign #email {
+    padding-left: .4rem;
+    border: .02rem solid rgba(127, 127, 127, 0.5);
+}
 
-.login #loging {
-    width: 10.5rem;
-    height: 1rem;
-    margin-left: .9rem;
-    margin-top: 1rem;
+.sign p {
+    float: right;
+    margin-right: 1.1rem;
+    font-size: .28rem;
+    color: #ccc;
+    margin: .2rem 1.1rem 0rem 0;
+}
+
+.sign .existing {
+    text-align: center;
+    font-size: .28rem;
+    margin-top: .7rem;
+}
+
+.sign .existing a {
+    color: black;
+}
+
+.sign .existing a span {
+    font-weight: 700;
+}
+
+.sign #loging {
+    margin-top: .1rem;
     display: block;
     background-color: #000;
     border-radius: .2rem;
@@ -81,41 +102,11 @@ body {
     cursor: pointer;
 }
 
-.login #loging:hover {
+.sign #loging:hover {
     opacity: 0.8;
 }
 
-.login ul li {
-    font-size: .32rem;
-    font-weight: 700;
-    color: #000;
-}
-
-.login ul li:nth-child(1) {
-    margin: .2rem 0 .2rem 0.9rem;
-    float: left;
-}
-
-.login ul li:nth-child(2) {
-    margin: .2rem 1.1rem.2rem 0rem;
-    float: right;
-}
-
-.login ul li:nth-child(1) a {
-    display: block;
-    color: #000;
-}
-
-.login ul li:nth-child(2) a {
-    display: block;
-    color: rgba(127, 127, 127, 0.5);
-}
-
-.login ul li:nth-child(2) a span {
-    color: #000;
-}
-
-.login div {
+.sign .agreement {
     font-size: .32rem;
     text-align: center;
     line-height: 1rem;
@@ -124,9 +115,10 @@ body {
     height: 1rem;
     margin-left: .9rem;
     margin-top: 0.7rem;
+    margin-bottom: 0.5rem;
     border-radius: .2rem;
 }
 
-.login div a {
+.sign .agreement a {
     color: #000;
 }
