@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/sign.css">
     <!-- 引入媒体查询 -->
     <link rel="stylesheet" href="./css/media.css">
+    <script src="./js/resize.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,10 @@
             <p>用作登入</p>
             <input type="password" name="password" id="password" placeholder="请输入您登入的密码!">
             <p>最6位字符</p>
+            <div class="sign_verification">
+                <input type="text" name="verification" id="verification" placeholder="验证码!">
+                <input type="button" value="获取验证码" class="verification">
+            </div>
             <div class="existing"><a href="./login.html">已有账号?<span>登入</span></a></div>
             <input type="button" value="快速注册" id="loging">
             <div class="agreement"><a href="#">注册登入即表示同意<span style="font-weight: 700;">用户协议·隐私政策</span></a></div>
