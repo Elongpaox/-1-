@@ -1,5 +1,4 @@
 window.addEventListener('load', function () {
-	console.log(window.innerWidth)
 	var windth = window.innerWidth;
 	function dispalyWidth(){
 		//获取box
